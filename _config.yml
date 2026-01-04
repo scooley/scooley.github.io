@@ -1,7 +1,7 @@
 # Site Settings
-title: "Sean Cooley"
-name: "Sean Cooley"
-description: "Tech Blog & Portfolio"
+title: "SCooley IO"
+name: "SCooley IO"
+description: "Starting a place to share what I find interesting right now."
 url: "https://scooley.io"
 baseurl: ""
 
@@ -11,8 +11,8 @@ minimal_mistakes_skin: "default"
 
 # Site Author
 author:
-  name: "Sean Cooley"
-  bio: "Software Developer & Tech Enthusiast"
+  name: "Sarah Cooley"
+  bio: "Curious human and tech enthusiast"
 
 # Reading Files
 include:
