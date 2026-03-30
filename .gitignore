@@ -48,3 +48,10 @@ _site/
 .jekyll-cache/
 .jekyll-metadata
 Gemfile.lock
+
+# Clarity Agent
+/.clarity-agent
+/clarity
+/clarity.ps1
+/clarity.bat
+/.clarity-protocol/transcripts/

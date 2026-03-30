@@ -1,0 +1,19 @@
+{
+  "clarityAgent": {
+    "path": "/Users/scooley/Applications/Clarity.app/Contents/Resources/app",
+    "version": "1.0.0"
+  },
+  "thinkers": {
+    "disabled": [],
+    "custom": []
+  },
+  "processes": {
+    "custom": []
+  },
+  "documentState": {
+    "goal/problem.md": {
+      "contentHash": "911c8ca90ea1bcffb0943819ed11a4d3d646c80bf6a61b4f4a02721f2ec8f53e",
+      "dependencyHashes": {}
+    }
+  }
+}
