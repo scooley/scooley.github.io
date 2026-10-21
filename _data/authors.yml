@@ -1,0 +1,21 @@
+scooley:
+  name: "Sarah Cooley"
+  avatar: "/assets/images/sarah-cooley.png"
+  home: "https://scooley.io"
+  bio: >-
+    Product manager working on AI systems.
+    Happy working remotely or with a remote team; able to travel up to 50%.
+  location: "Seattle, WA"
+  links:
+    - label: "scooley.io"
+      icon: "fas fa-fw fa-link"
+      url: "https://scooley.io"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/cooleys/"
+    - label: "Ravelry"
+      icon: "fab fa-fw fa-ravelry"
+      url: "https://www.ravelry.com/projects/yiandes"
+    - label: "Goodreads"
+      icon: "fab fa-fw fa-goodreads"
+      url: "https://www.goodreads.com/user/show/41376801-sarah-cooley"

@@ -3,6 +3,7 @@ layout: single
 title: "Resume"
 permalink: /resume/
 author_profile: true
+author: scooley
 toc: true
 toc_label: "In my resume"
 toc_sticky: true
@@ -29,7 +30,6 @@ I have domain expertise in:
 - Cloud operations, with an emphasis on security and compute efficiency.
 - Partner management to create cross-company solutions.
 
-My primary location is Seattle, WA. I'm happy working remotely or with a remote team and able to travel up to 50%.  
 Outside of work, I'm constantly remodeling my house, I read, hike, travel, teach, and cycle through different crafts.
 
 ---
