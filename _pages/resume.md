@@ -9,9 +9,9 @@ toc_label: "On this page"
 toc_sticky: true
 ---
 
-I'm a technical product manager who has spent 15 years building platforms and products, from Windows and containers to Kubernetes at the edge and AI safety. I was a people manager for four years and loved it; helping people achieve great things is my favorite thing.
+I'm a technical product manager who has spent 15 years building platforms and products, from containers on Windows to AI safety tools. I was a people manager for four years and loved it; helping people achieve great things is my favorite.
 
-Since product manager can mean many things - I like deciding what we're building, for whom, and why it matters.  Said another way, I like understanding what people need and making complicated problems easier to work on.
+Since product manager can mean many things - I like deciding what to build, for whom, and why it matters.  Said another way, I like understanding what people need and making complicated problems easier to work on.
 
 ## My top hits
 
@@ -25,7 +25,9 @@ Since product manager can mean many things - I like deciding what we're building
 
 ## How I like to work
 
-I like talking to customers early and staying close as they move from running an experiment to production integration. Direct conversations, bug reports, and product data all tell different parts of that story. I use what I learn from customers to decide what to build, what to improve, and sometimes what to stop doing.  I also bring the team (and leaders) along.  I make sure we agree on a shared direction because clear goals and strategy let everyone do their best work.
+I want to build delightful tools and experiences with my friends.
+
+I talk to customers early and stay close as they move from running an experiment to production integration. Direct conversations, bug reports, and product data all tell different parts of the customer story.  I use what I learn to decide what to build, what to improve, and what to stop doing.  Bringing the team (and leaders) along is critical; making sure we agree on a shared direction with clear goals and strategy lets everyone do their best work.
 
 I enjoy helping people.  I like coaching, teaching, and sharing.  I have a knack for working across organizational boundaries and explaining technical decisions to people with different backgrounds
 
@@ -41,11 +43,11 @@ These roles have all been at Microsoft, with quite a few different customers and
 
 *October 2025 to November 2026*
 
-AI systems that remember things introduce a new set of safety questions. I own AI memory risk and policy across Microsoft: writing best practices published on Microsoft Learn, bringing teams together through a Memory Safety Working Group, and teaching through forums including the AI Safety Summit and BlueHat AI Safety Village.
+AI systems that remember things introduce a new set of safety questions. I own AI memory risk and policy across Microsoft: writing [best practices published on Microsoft Learn](https://learn.microsoft.com/en-us/security/zero-trust/sfi/manage-agentic-memory-safety), bringing teams together through a Memory Safety Working Group, and teaching through forums including the AI Safety Summit and BlueHat AI Safety Village.
 
 To make policy coverage measurable, I built an early, query-based inventory spanning **135,000+ repositories**. It gave us Microsoft's first coverage metric for AI security policy and a starting point for automating checks.
 
-I also took Clarity Agent, a tool for thinking through risks earlier in development, from hackathon project to open-source release. Alongside contributions to RAMPART and PyRIT, that work led to mapping where our AI safety tools fit in the development process and working with the AI Red Team on automating red-team operations.
+I also took [Clarity Agent](https://github.com/microsoft/clarity-agent), a tool for thinking through risks earlier in development, from hackathon project to open-source release. Alongside contributions to [RAMPART](https://github.com/microsoft/RAMPART) and [PyRIT](https://github.com/microsoft/PyRIT), that work led to mapping where our AI safety tools fit in the development process and working with the [AI Red Team](https://learn.microsoft.com/en-us/security/ai-red-team/) on automating red-team operations.
 
 ### Protecting the systems other systems depend on
 
@@ -53,7 +55,7 @@ I also took Clarity Agent, a tool for thinking through risks earlier in developm
 
 *September 2024 to October 2025*
 
-I hired a team to put Microsoft's Trusted Computing Base program into practice. These are foundational services that other systems depend on for security. We used the Secure Future Initiative to prioritize the work and brought **10 business groups** on board.
+I hired a team to put Microsoft's Trusted Computing Base program into practice. These are foundational services that other systems depend on for security. We used the [Secure Future Initiative](https://www.microsoft.com/en-us/trust-center/security/secure-future-initiative) to prioritize the work and brought **10 business groups** on board.
 
 One focus was keeping credentials from crossing boundaries they shouldn't. I drove work to revoke **3,700+ production certificates** from non-production environments and advanced cross-boundary credential isolation to **98.7% company-wide**. [Read the July 2026 progress report](https://www.microsoft.com/en-us/trust-center/security/secure-future-initiative/sfi-progress-report-july-2026).
 
@@ -63,7 +65,7 @@ One focus was keeping credentials from crossing boundaries they shouldn't. I dro
 
 *May 2021 to September 2024*
 
-I led a team of five product managers bringing Azure Kubernetes Service (AKS) beyond the cloud. Our work grew from running Kubernetes in datacenters to supporting smaller devices with AKS Edge Essentials.
+I led a team of five product managers bringing Azure Kubernetes Service (AKS) beyond the cloud. Our work grew from running Kubernetes in datacenters to supporting smaller devices with [AKS Edge Essentials](https://learn.microsoft.com/en-us/azure/aks-hybrid-edge/edge-essentials/aks-edge-overview).
 
 The customer stories make this work tangible:
 
@@ -94,9 +96,9 @@ My corner of Hyper-V was the boundary between a virtual machine and the operatin
 
 Three projects stand out:
 
-- **Windows Subsystem for Linux:** working with Canonical to bring a native Ubuntu command-line experience to Windows.
-- **Windows containers:** owning launch documentation with Docker and helping Microsoft 365, Azure Functions, Cosmos DB, and Azure Stream Analytics adopt containers to scale and reduce operating costs.
-- **Guest-host communication:** designing a socket-based channel that partners could build on, later used by Visual Studio Code extensions and core Azure infrastructure.
+- **[Windows Subsystem for Linux](https://learn.microsoft.com/en-us/windows/wsl/about):** working with Canonical to bring a native Ubuntu command-line experience to Windows.
+- **[Windows containers](https://learn.microsoft.com/en-us/virtualization/windowscontainers/about/):** owning launch documentation with Docker and helping Microsoft 365, Azure Functions, Cosmos DB, and Azure Stream Analytics adopt containers to scale and reduce operating costs.
+- **[Guest-host communication](https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/make-integration-service):** designing a socket-based channel that partners could build on, later used by Visual Studio Code extensions and core Azure infrastructure.
 
 Community was part of the job I especially enjoyed: blogging, speaking, writing documentation, mentoring, and helping with the Women in Base employee resource group.
 
@@ -122,6 +124,6 @@ Teaching and mentoring have been a thread throughout my career, alongside helpin
 **Oregon State University – Class of 2011**
 B.S. Electrical and Computer Engineering, B.S. Computer Science.
 
-I got my start in tech at the OSU Open Source Lab — a sneaky student run 5-9s uptime datacenter that hosted lots of critical software like early FireFox, kernel.org, and many package mirrors.  It was a wonderful place to learn by doing. I worked on media software (Watch and Listen) for One Laptop per Child, and found a community around open source: the Linux Users Group, hackathons, and weekly coding socials.
+I got my start in tech at the [OSU Open Source Lab](https://osuosl.org/) — a sneaky, student run, 5-9s uptime datacenter that hosted lots of critical software like early FireFox, kernel.org, and many package mirrors.  It was a wonderful place to learn by doing. I worked on media software (Watch and Listen) for One Laptop per Child, and found a community around open source: the Linux Users Group, hackathons, and weekly coding socials.
 
 Outside of work, I'm usually remodeling my house, reading, hiking, traveling, teaching, or cycling through different crafts.
