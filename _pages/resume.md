@@ -35,12 +35,11 @@ My technical home is building platforms: operating systems, virtualization, cont
 
 ## The longer story
 
-These roles have all been at Microsoft, with quite a few different customers and problems along the way.
+These roles have all been at Microsoft but on different teams with quite a few different customers and problems along the way.
 
 ### AI memory and agent safety
 
-**Principal AI Security Program Manager — AeGIS, AI & Agentic System Safety**
-
+**Principal AI Security Program Manager — AI Safety and Security**<br>
 *October 2025 to November 2026*
 
 AI systems that remember things introduce a new set of safety questions. I own AI memory risk and policy across Microsoft: writing [best practices published on Microsoft Learn](https://learn.microsoft.com/en-us/security/zero-trust/sfi/manage-agentic-memory-safety), bringing teams together through a Memory Safety Working Group, and teaching through forums including the AI Safety Summit and BlueHat AI Safety Village.
@@ -51,8 +50,7 @@ I also took [Clarity Agent](https://github.com/microsoft/clarity-agent), a tool 
 
 ### Protecting the systems other systems depend on
 
-**Security Operations Engineering Lead — CISO protections team**
-
+**Security Operations Engineering Lead — CISO protections team**<br>
 *September 2024 to October 2025*
 
 I hired a team to put Microsoft's Trusted Computing Base program into practice. These are foundational services that other systems depend on for security. We used the [Secure Future Initiative](https://www.microsoft.com/en-us/trust-center/security/secure-future-initiative) to prioritize the work and brought **10 business groups** on board.
@@ -61,8 +59,7 @@ One focus was keeping credentials from crossing boundaries they shouldn't. I dro
 
 ### Kubernetes at the edge
 
-**Principal Program Manager Lead — Arc enabled AKS**
-
+**Principal Program Manager Lead — Arc enabled AKS**<br>
 *May 2021 to September 2024*
 
 I led a team of five product managers bringing Azure Kubernetes Service (AKS) beyond the cloud. Our work grew from running Kubernetes in datacenters to supporting smaller devices with [AKS Edge Essentials](https://learn.microsoft.com/en-us/azure/aks-hybrid-edge/edge-essentials/aks-edge-overview).
@@ -78,50 +75,48 @@ Our team health and leadership-confidence scores were above the Microsoft and or
 
 ### Making HoloLens manageable at scale
 
-**Senior Program Manager — HoloLens**
-
+**Senior Program Manager — HoloLens**<br>
 *April 2019 to May 2021*
 
-Buying hundreds of headsets is only useful if you can deploy, maintain, and secure them. I owned that enterprise IT experience for HoloLens 2, building the roadmap and shipping major releases twice a year for customers and partners.
+Buying hundreds of headsets is only useful if you can deploy, maintain, and secure them. I made sure enterprise IT could recieve a palate full of HoloLens 2 then deploy and manage them securely in their infrastructure.  I built the roadmap and shiped major releases twice a year for customers and partners.  Some key items included MDM support for Hololens, Autopilot pre-provisioning, and unattend install from USB.
 
 I also worked on secure device deployment for the [Integrated Visual Augmentation System (IVAS) program](https://news.microsoft.com/source/features/digital-transformation/u-s-army-to-use-hololens-technology-in-high-tech-headsets-for-soldiers/), whose production contract was valued at up to $22 billion. That meant working through strict security requirements and assessments for devices used at the tactical edge.
 
 ### Windows, Linux, and containers
 
-**Senior Program Manager — Hyper-V**
-
+**Senior Program Manager — Hyper-V**<br>
 *December 2013 to April 2019*
 
-My corner of Hyper-V was the boundary between a virtual machine and the operating system running it. That work reached everyone from individual developers to enterprise customers and Azure.
+I owned Hyper-V's boundary between a virtual machine and the operating system running it (guest <-> host interface). That work reached everyone from individual developers to enterprise customers and Azure.
 
 Three projects stand out:
 
 - **[Windows Subsystem for Linux](https://learn.microsoft.com/en-us/windows/wsl/about):** working with Canonical to bring a native Ubuntu command-line experience to Windows.
-- **[Windows containers](https://learn.microsoft.com/en-us/virtualization/windowscontainers/about/):** owning launch documentation with Docker and helping Microsoft 365, Azure Functions, Cosmos DB, and Azure Stream Analytics adopt containers to scale and reduce operating costs.
+- **[Windows containers](https://learn.microsoft.com/en-us/virtualization/windowscontainers/about/):** owning launch documentation with Docker and helping Microsoft 365, Azure Functions, Cosmos DB, and Azure Stream Analytics adopt containers to scale and reduce operating costs.  This was built on grpc with custom interfaces to container management integrated into containerd via an runc Windows adaptation ([runhcs](https://github.com/microsoft/hcsshim)).
 - **[Guest-host communication](https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/make-integration-service):** designing a socket-based channel that partners could build on, later used by Visual Studio Code extensions and core Azure infrastructure.
 
-Community was part of the job I especially enjoyed: blogging, speaking, writing documentation, mentoring, and helping with the Women in Base employee resource group.
+Building community around the new Windows container ecosystem was a big part of my job.  I spent a lot of time blogging, speaking, writing documentation, mentoring, and helping with the Women in Base employee resource group.
 
-### Helping people explore data
+### Data insights
 
-**Program Manager — SQL**
-
+**Program Manager — SQL**<br>
 *September 2011 to December 2013*
 
-I started with an interactive HTML5/JavaScript charting library designed to make data analysis more accessible. I helped define the product, brought the customer perspective into design, owned documentation, and worked across teams on the roadmap.
+I worked on a small prototype team in SQL building tools to derive insights on unstructured data streams.  I was directly responsible for an interactive HTML5/JavaScript charting library designed to make data analysis more accessible. I helped define the product, brought the customer perspective into design, owned documentation, and worked across teams on the roadmap.  Our charting library became the basis for PowerBI's cross-chart interactive data filtering/hilighting.
 
 ## Teaching and community
 
 Teaching and mentoring have been a thread throughout my career, alongside helping with hiring and recruiting. I've also enjoyed sharing what I've learned at conferences, with speaker scores consistently at 4.7/5.
 
-- **TEALS, Academy for Precision Learning** — teacher, December 2016 to July 2018.
+- **Hunt the Wumpus** - teacher, 2026
+- **TEALS, Academy for Precision Learning** — teacher, 2016 - 2018.
 - **Society of Women Engineers** — Saturday Academy, Computational Thinking Dinner, and other events.
 - **Oregon State University, School of Electrical Engineering and Computer Science** — computer science lab teaching assistant, January 2009 to September 2011.
-- **Oregon State University, Open Source Lab and Linux Users Group** — March 2006 to September 2011.
+- **Oregon State University, Open Source Lab and Linux Users Group** — March 2006 to September 2011. - I organized the first 3 Beaver Bar Camps and content for the monthly Linux User Group meetings.
 
 ## Where I started
 
-**Oregon State University – Class of 2011**
+**Oregon State University – Class of 2011**<br>
 B.S. Electrical and Computer Engineering, B.S. Computer Science.
 
 I got my start in tech at the [OSU Open Source Lab](https://osuosl.org/) — a sneaky, student run, 5-9s uptime datacenter that hosted lots of critical software like early FireFox, kernel.org, and many package mirrors.  It was a wonderful place to learn by doing. I worked on media software (Watch and Listen) for One Laptop per Child, and found a community around open source: the Linux Users Group, hackathons, and weekly coding socials.
