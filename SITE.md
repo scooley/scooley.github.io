@@ -19,14 +19,22 @@ linked highlights followed by a conversational career history, rather than a
 document-style resume. Its "On this page" navigation comes from the theme's
 built-in table of contents.
 
-## System appearance
+## Appearance
 
-The site follows the device's light or dark appearance without JavaScript.
+The footer's Appearance selector offers System, Light, and Dark. System is the
+default and follows changes to the device's appearance. Explicit choices are
+saved in the browser's `localStorage` under `color-scheme` and applied before
+page content renders by `assets/js/appearance.js`. If storage is unavailable,
+the choice still works for the current page and a warning is logged.
+
+`_includes/footer/custom.html` provides the selector, styled by
+`assets/css/appearance.css`. It stays hidden without JavaScript; the site
+still follows the system appearance in that case.
+
 The light skin is selected by `minimal_mistakes_skin` in `_config.yml`.
-`_includes/head/custom.html` loads `assets/css/dark.scss` only when
-`prefers-color-scheme: dark` matches and lets native browser controls follow
-the system appearance.
-
+`_includes/head/custom.html` links to the generated `assets/css/dark.css`
+(built from `assets/css/dark.scss`). The script adjusts that link's media
+condition and the native browser color scheme to match the selected option.
 The dark stylesheet imports Minimal Mistakes' built-in dark skin and styles,
-so both appearances stay aligned with the remote theme. Keep the media
-condition on the stylesheet link so it does not override the light skin.
+so both appearances stay aligned with the remote theme. Keep the initial
+`prefers-color-scheme: dark` condition for the no-JavaScript fallback.

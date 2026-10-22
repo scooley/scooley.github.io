@@ -104,11 +104,7 @@ Building community around the new Windows container ecosystem was a big part of 
 
 I worked on a small prototype team in SQL building tools to derive insights on unstructured data streams.  I was directly responsible for an interactive HTML5/JavaScript charting library designed to make data analysis more accessible. I helped define the product, brought the customer perspective into design, owned documentation, and worked across teams on the roadmap.  Our charting library became the basis for PowerBI's cross-chart interactive data filtering/hilighting.
 
-## Teaching and community
-
-Teaching and mentoring have been a thread throughout my career, alongside helping with hiring and recruiting. I've also enjoyed sharing what I've learned at conferences, with speaker scores consistently at 4.7/5.
-
-### Talks and interviews
+## Talks and interviews
 
 | Recording | Year | Topic | Audience / context |
 | --- | --- | --- | --- |
@@ -118,7 +114,11 @@ Teaching and mentoring have been a thread throughout my career, alongside helpin
 | [We put Linux in your Windows](https://www.youtube.com/watch?v=JZCPYWrTLTg) | 2018 | WSL and Linux tooling for web developers | SFHTML5 meetup in San Francisco |
 | [PowerShell Direct interview](https://www.youtube.com/watch?v=xVzgPGwMb-s) | 2015 | Managing Hyper-V virtual machines with PowerShell Direct | Interview with Carsten Rachfahl at Microsoft Ignite |
 
-### Teaching and volunteering
+I've enjoy sharing what I've learned even though stage fright is real.  I have consistently high speaker scores (4.7/5).
+
+## Teaching and volunteering
+
+Teaching and mentoring have been a thread throughout my career, alongside helping with hiring and recruiting.
 
 - **Hunt the Wumpus** - teacher, 2026
 - **TEALS, Academy for Precision Learning** — teacher, 2016 - 2018.
