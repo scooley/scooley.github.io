@@ -97,7 +97,7 @@ Three projects stand out:
 
 Building community around the new Windows container ecosystem was a big part of my job.  I spent a lot of time blogging, speaking, writing documentation, mentoring, and helping with the Women in Base employee resource group.
 
-### Data insights
+### Data insights on unstructured data
 
 **Program Manager — SQL**<br>
 *September 2011 to December 2013*
@@ -108,7 +108,7 @@ I worked on a small prototype team in SQL building tools to derive insights on u
 
 Teaching and mentoring have been a thread throughout my career, alongside helping with hiring and recruiting. I've also enjoyed sharing what I've learned at conferences, with speaker scores consistently at 4.7/5.
 
-### Talks, interviews, and podcasts
+### Talks and interviews
 
 | Recording | Year | Topic | Audience / context |
 | --- | --- | --- | --- |

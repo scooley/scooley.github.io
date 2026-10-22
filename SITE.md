@@ -18,3 +18,15 @@ Other pages continue to use the site-wide author in `_config.yml`.
 linked highlights followed by a conversational career history, rather than a
 document-style resume. Its "On this page" navigation comes from the theme's
 built-in table of contents.
+
+## System appearance
+
+The site follows the device's light or dark appearance without JavaScript.
+The light skin is selected by `minimal_mistakes_skin` in `_config.yml`.
+`_includes/head/custom.html` loads `assets/css/dark.scss` only when
+`prefers-color-scheme: dark` matches and lets native browser controls follow
+the system appearance.
+
+The dark stylesheet imports Minimal Mistakes' built-in dark skin and styles,
+so both appearances stay aligned with the remote theme. Keep the media
+condition on the stylesheet link so it does not override the light skin.
