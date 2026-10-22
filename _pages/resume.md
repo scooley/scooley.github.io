@@ -9,24 +9,27 @@ toc_label: "On this page"
 toc_sticky: true
 ---
 
-I'm a technical product manager. I have spent 15 years building platforms and products, from Windows and containers to Kubernetes at the edge and AI safety. I was a people manager for four years and loved it; helping people achieve great things is my favorite thing.
+I'm a technical product manager who has spent 15 years building platforms and products, from Windows and containers to Kubernetes at the edge and AI safety. I was a people manager for four years and loved it; helping people achieve great things is my favorite thing.
 
-I like understanding what people need and making complicated problems easier to work on.
+Since product manager can mean many things - I like deciding what we're building, for whom, and why it matters.  Said another way, I like understanding what people need and making complicated problems easier to work on.
 
-## A few highlights
+## My top hits
 
-- **[Making AI memory safer](#ai-memory-and-agent-safety).** Turning an emerging risk into practical guidance, tools, and ways to measure whether systems follow security policy.
-- **[Taking Kubernetes beyond the cloud](#kubernetes-at-the-edge).** Leading a five-person product team building for datacenters, factories, and smaller edge devices.
-- **[Scaling mixed reality in secure environments](#making-hololens-manageable-at-scale).** Helping deploy HoloLens and IVAS in closely guarded factories and national-security environments. A cloud-connected bundle of cameras and biometric sensors isn't an easy sell in places like those.
-- **[Building tools for developers](#windows-linux-and-containers).** Working on the Windows Subsystem for Linux, launching Windows containers, and connecting virtual machines to their hosts.
+<span aria-hidden="true">🧠</span> **[Making AI memory safer](#ai-memory-and-agent-safety)** - I turned an emerging risk into practical guidance, tools, and measurable security policy.
+
+<span aria-hidden="true">☁️</span> **[Taking Kubernetes beyond the cloud](#kubernetes-at-the-edge)** - I led a five-person product team building for datacenters, factories, and smaller edge devices.
+
+<span aria-hidden="true">🥽</span> **[Scaling mixed reality in secure environments](#making-hololens-manageable-at-scale)** - I made it possible for HoloLens and IVAS customers to confidently deploy what is, essentially, a cloud-connected camera array into high security environments.
+
+<span aria-hidden="true">🛠️</span> **[Building tools for developers](#windows-linux-and-containers)** - I helped ship the Windows Subsystem for Linux and launch containers on Windows.
 
 ## How I like to work
 
-I like talking to customers early and staying close as they move from running an experiment to production integration. Conversations, support issues, and product data all tell different parts of that story. I use data and customer conversations to decide what to build, what to improve, and sometimes what to stop doing.
+I like talking to customers early and staying close as they move from running an experiment to production integration. Direct conversations, bug reports, and product data all tell different parts of that story. I use what I learn from customers to decide what to build, what to improve, and sometimes what to stop doing.  From there, I help teams (and leaders) agree on a shared direction because clear goals and strategy let everyone do their best work.
 
-I also like helping teams find a shared direction because clear goals and strategy so everyone can do their best work. That includes coaching, working across organizational boundaries, and explaining technical decisions to people with different backgrounds.
+I enjoy helping people.  I like coaching, teaching, and sharing.  I have a knack for working across organizational boundaries and explaining technical decisions to people with different backgrounds
 
-My technical home is platforms: operating systems, virtualization, containers, identity, and security. I've worked with developers, enterprise IT teams, and partners across cloud, datacenter, and edge environments.
+My technical home is building platforms: operating systems, virtualization, containers, identity, and security. I've worked with developers, enterprise IT teams, and partners across cloud, datacenter, and edge environments.
 
 ## The longer story
 
