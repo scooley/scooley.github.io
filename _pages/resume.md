@@ -25,7 +25,7 @@ Since product manager can mean many things - I like deciding what we're building
 
 ## How I like to work
 
-I like talking to customers early and staying close as they move from running an experiment to production integration. Direct conversations, bug reports, and product data all tell different parts of that story. I use what I learn from customers to decide what to build, what to improve, and sometimes what to stop doing.  From there, I help teams (and leaders) agree on a shared direction because clear goals and strategy let everyone do their best work.
+I like talking to customers early and staying close as they move from running an experiment to production integration. Direct conversations, bug reports, and product data all tell different parts of that story. I use what I learn from customers to decide what to build, what to improve, and sometimes what to stop doing.  I also bring the team (and leaders) along.  I make sure we agree on a shared direction because clear goals and strategy let everyone do their best work.
 
 I enjoy helping people.  I like coaching, teaching, and sharing.  I have a knack for working across organizational boundaries and explaining technical decisions to people with different backgrounds
 
