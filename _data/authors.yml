@@ -3,9 +3,8 @@ scooley:
   avatar: "/assets/images/sarah-cooley.png"
   home: "https://scooley.io"
   bio: >-
-    Product manager working on AI systems.
-    Happy working remotely or with a remote team; able to travel up to 50%.
-  location: "Seattle, WA"
+    I like building things customers love with my friends.
+  location: "Seattle, WA (up to 50% remote)"
   links:
     - label: "scooley.io"
       icon: "fas fa-fw fa-link"
@@ -19,3 +18,6 @@ scooley:
     - label: "Goodreads"
       icon: "fab fa-fw fa-goodreads"
       url: "https://www.goodreads.com/user/show/41376801-sarah-cooley"
+    - label: "Flickr"
+      icon: "fab fa-fw fa-flickr"
+      url: "https://www.flickr.com/photos/yiandes/"

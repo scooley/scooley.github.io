@@ -1,111 +1,124 @@
 ---
 layout: single
-title: "Resume"
+title: "My work"
 permalink: /resume/
 author_profile: true
 author: scooley
 toc: true
-toc_label: "In my resume"
+toc_label: "On this page"
 toc_sticky: true
 ---
 
-Technical product manager with 15 years of experience building platforms and products, 4 years as an M1 manager.
+I'm a technical product manager. I have spent 15 years building platforms and products, from Windows and containers to Kubernetes at the edge and AI safety. I was a people manager for four years and loved it; helping people achieve great things is my favorite thing.
 
-To reliably ship value to customers in Microsoft's highly matrixed environment, I have demonstrated ability to:
+I like understanding what people need and making complicated problems easier to work on.
 
-- Lead a high-performance team with a shared vision, strategy, and high-trust culture. I love coaching.
-- Identify opportunities for the team and create sufficient structure deliver results and measure impact (OKRs).
-- Drive product development during all stages of product lifecycle from ideation and proof of concept to sustainment. This includes finding market fit, product launch, scale motions, and deprecation strategy.
-- Gather customer and business insights through direct interaction, indirect sources, and data.
-- Create consensus by sharing technical, customer, and business context in audience-appropriate ways.
-- Represent my products and Microsoft with demos, speaking at conferences, interviews, and blogging.
+## A few highlights
 
-I have domain expertise in:
+- **[Making AI memory safer](#ai-memory-and-agent-safety).** Turning an emerging risk into practical guidance, tools, and ways to measure whether systems follow security policy.
+- **[Taking Kubernetes beyond the cloud](#kubernetes-at-the-edge).** Leading a five-person product team building for datacenters, factories, and smaller edge devices.
+- **[Scaling mixed reality in secure environments](#making-hololens-manageable-at-scale).** Helping deploy HoloLens and IVAS in closely guarded factories and national-security environments. A cloud-connected bundle of cameras and biometric sensors isn't an easy sell in places like those.
+- **[Building tools for developers](#windows-linux-and-containers).** Working on the Windows Subsystem for Linux, launching Windows containers, and connecting virtual machines to their hosts.
 
-- AI and agentic system safety: memory and provenance, adversarial testing and red teaming, AI security policy and governance.
-- Operating systems with emphasis on virtualization (VMs/containers), identity, security, and device management.
-- Kubernetes, container runtimes, and the container ecosystem, especially dev, ops, ISV/SI flows.
-- Edge, cloud, and hybrid compute patterns and problems from datacenter to IoT edge.
-- Enterprise IT in many verticals including regulated environments, cloud native developers, IoT SI and ISVs.
-- Cloud operations, with an emphasis on security and compute efficiency.
-- Partner management to create cross-company solutions.
+## How I like to work
 
-Outside of work, I'm constantly remodeling my house, I read, hike, travel, teach, and cycle through different crafts.
+I like talking to customers early and staying close as they move from running an experiment to production integration. Conversations, support issues, and product data all tell different parts of that story. I use data and customer conversations to decide what to build, what to improve, and sometimes what to stop doing.
 
----
+I also like helping teams find a shared direction because clear goals and strategy so everyone can do their best work. That includes coaching, working across organizational boundaries, and explaining technical decisions to people with different backgrounds.
 
-## Work Experience
+My technical home is platforms: operating systems, virtualization, containers, identity, and security. I've worked with developers, enterprise IT teams, and partners across cloud, datacenter, and edge environments.
 
-### Principal AI Security Program Manager – AeGIS, AI & Agentic System Safety, Microsoft
+## The longer story
+
+These roles have all been at Microsoft, with quite a few different customers and problems along the way.
+
+### AI memory and agent safety
+
+**Principal AI Security Program Manager — AeGIS, AI & Agentic System Safety**
+
 *October 2025 to November 2026*
 
-AeGIS shapes how Microsoft builds agentic systems safely and red-teams AI models across the industry; I own AI memory risk + policy across the company. I drove memory safety from early steer guidance to company-wide adoption by authoring best practices (published on Microsoft Learn) and presenting memory safety in numerous forums (Trusted AI Builders series, AI Safety Summit, BlueHat AI Safety Village).
+AI systems that remember things introduce a new set of safety questions. I own AI memory risk and policy across Microsoft: writing best practices published on Microsoft Learn, bringing teams together through a Memory Safety Working Group, and teaching through forums including the AI Safety Summit and BlueHat AI Safety Village.
 
-Internally, I built a Memory Safety Working Group spanning M365, RAI, MAI, CoreAI, and ORA.  To make risk measurable, I built an early query-based AI system inventory producing Microsoft's first coverage metric for AI security policy across 135k+ repositories. This laid groundwork for automating AI policy attestation.
+To make policy coverage measurable, I built an early, query-based inventory spanning **135,000+ repositories**. It gave us Microsoft's first coverage metric for AI security policy and a starting point for automating checks.
 
-I have helped with several AI safety tools (Clarity Agent, RAMPART, and PyRIT). I took Clarity Agent — a tool to shift risk analysis early in development — from hackathon project to an open-sourced release. My work on Clarity Agent led to mapping our AI safety tools against the product lifecycle and external competitive landscape and a project with AI Red Team to automate red team operations.
+I also took Clarity Agent, a tool for thinking through risks earlier in development, from hackathon project to open-source release. Alongside contributions to RAMPART and PyRIT, that work led to mapping where our AI safety tools fit in the development process and working with the AI Red Team on automating red-team operations.
 
-Throughout my career I have taken time to mentor early in career technologists, teach, and help with hiring/recruiting. To date, my speaker scores are consistently high (4.7/5).
+### Protecting the systems other systems depend on
 
-### Security Operations Engineering Lead – CISO protections team, Microsoft
+**Security Operations Engineering Lead — CISO protections team**
+
 *September 2024 to October 2025*
 
-I (with a team I hired) operationalized Microsoft's Trusted Computing Base (TCB) program based on a NorthStar vision with EVP and dCISO approval. My team's strategy leveraged the Secure Future Initiative (SFI) to prioritize TCB services.  We got commitment from 10 business groups to help address TCB risk.
+I hired a team to put Microsoft's Trusted Computing Base program into practice. These are foundational services that other systems depend on for security. We used the Secure Future Initiative to prioritize the work and brought **10 business groups** on board.
 
-Within the  tenant-isolation SFI pillar, I drove company-wide remediation that revoked 3,700+ prod certificates from non-prod environments, starting with TCB services as the highest risk targets for lateral movement, and advanced cross-boundary credential isolation to 98.7% company wide ([outcomes reported July 2026](https://www.microsoft.com/en-us/trust-center/security/secure-future-initiative/sfi-progress-report-july-2026)).
+One focus was keeping credentials from crossing boundaries they shouldn't. I drove work to revoke **3,700+ production certificates** from non-production environments and advanced cross-boundary credential isolation to **98.7% company-wide**. [Read the July 2026 progress report](https://www.microsoft.com/en-us/trust-center/security/secure-future-initiative/sfi-progress-report-july-2026).
 
-### Principal Program Manager Lead – Arc enabled AKS, Microsoft
+### Kubernetes at the edge
+
+**Principal Program Manager Lead — Arc enabled AKS**
+
 *May 2021 to September 2024*
 
-Azure Arc extends AKS from cloud to Edge. I led a 5 PM team to scale our in-market product. As our charter grew, my team shifted from AKS in datacenters to IoT with AKS Edge Essentials. Internal polls show my team health and leadership confidence were above average for Microsoft and my org.
+I led a team of five product managers bringing Azure Kubernetes Service (AKS) beyond the cloud. Our work grew from running Kubernetes in datacenters to supporting smaller devices with AKS Edge Essentials.
 
-Our product decisions enabled inspiring customer outcomes:
-- [Emirates Global Aluminium](https://www.microsoft.com/en/customers/story/1777264680029793974-ega-azure-arc-discrete-manufacturing-en-united-arab-emirates) built a manufacturing platform with AKS on HCI that reduced image and video analytics costs by 86% while resulting in 13x faster AI response times.
-- [ABB](https://www.microsoft.com/en/customers/story/1705722215075384871-abb-aks-edge-essentials-discrete-manufacturing-switzerland-en/) used AKS Edge Essentials to unify industrial application deployment across edge and cloud, cutting development and deployment time in half.
+The customer stories make this work tangible:
 
-I helped deliver AKS hybrid features and contributed business-case evidence supporting [Microsoft's recognition as a Leader in the 2023 Gartner Magic Quadrant for Distributed Hybrid Infrastructure](https://azure.microsoft.com/en-us/blog/microsoft-recognized-as-a-leader-in-2023-gartner-magic-quadrant-for-distributed-hybrid-infrastructure/).
+- [Emirates Global Aluminium](https://www.microsoft.com/en/customers/story/1777264680029793974-ega-azure-arc-discrete-manufacturing-en-united-arab-emirates) built a manufacturing platform that cut image and video analytics costs by **86%**, with **13× faster AI response times**.
+- [ABB](https://www.microsoft.com/en/customers/story/1705722215075384871-abb-aks-edge-essentials-discrete-manufacturing-switzerland-en/) unified application deployment across edge and cloud, cutting development and deployment time in half.
 
-I personally led planning, shiproom, bug triage, quality reporting, and support flows. Planning has been my venue for developing Objectives the team believes in with ambitious but achievable Key Results based on our business and engineering reality (OKRs).
+I built a customer program that followed early adopters from proof of concept toward production. Connecting those conversations to product data helped us choose where to invest: new features, experiments, or making the existing product better. I also led planning, release decisions, and quality and support reviews.
 
-My passion project has been to encourage customer obsession. I created a customer program to gather feedback from early adopters, identify customers with near-term production goals, and map customer conversations to telemetry/product data so we could learn from their proof of concept to production journey. Working closely with key customers helped us identify patterns and verticals so we could focus our roadmap on high impact features. It also informed the resource balance between in-market features, incubation projects, and quality improvements.
+Our team health and leadership-confidence scores were above the Microsoft and organization averages. I also helped deliver hybrid AKS features and contributed evidence supporting [Microsoft's recognition in Gartner's 2023 distributed hybrid infrastructure report](https://azure.microsoft.com/en-us/blog/microsoft-recognized-as-a-leader-in-2023-gartner-magic-quadrant-for-distributed-hybrid-infrastructure/).
 
-### Senior Program Manager – HoloLens, Microsoft
+### Making HoloLens manageable at scale
+
+**Senior Program Manager — HoloLens**
+
 *April 2019 to May 2021*
 
-I owned the HoloLens 2 enterprise IT experience so when a customer buys hundreds of devices they can deploy, maintain, and secure them centrally. I built a roadmap for supporting and shipped semi-annual major releases with critical work for key HoloLens 2 customers and partners.
+Buying hundreds of headsets is only useful if you can deploy, maintain, and secure them. I owned that enterprise IT experience for HoloLens 2, building the roadmap and shipping major releases twice a year for customers and partners.
 
-I applied my device management expertise to the [Integrated Visual Augmentation System (IVAS) program](https://news.microsoft.com/source/features/digital-transformation/u-s-army-to-use-hololens-technology-in-high-tech-headsets-for-soldiers/) to support contract requirements for secure deployment on the tactical edge. The program's production contract was valued up to $22B. Any IVAS improvement needs to pass rigorous security milestones, I have experience with STIG/FIPs requirements and SCA assessments.
+I also worked on secure device deployment for the [Integrated Visual Augmentation System (IVAS) program](https://news.microsoft.com/source/features/digital-transformation/u-s-army-to-use-hololens-technology-in-high-tech-headsets-for-soldiers/), whose production contract was valued at up to $22 billion. That meant working through strict security requirements and assessments for devices used at the tactical edge.
 
-### Senior Program Manager – Hyper-V, Microsoft
+### Windows, Linux, and containers
+
+**Senior Program Manager — Hyper-V**
+
 *December 2013 to April 2019*
 
-Hyper-V provides virtualization on Windows to create virtual machines, containers, and provide platform security. While in Hyper-V, I supported Azure (built on Hyper-V), small and medium business, large enterprise customers, and developers. My technical ownership was the boundary between virtual machines and the host operating system.
+My corner of Hyper-V was the boundary between a virtual machine and the operating system running it. That work reached everyone from individual developers to enterprise customers and Azure.
 
-My highest impact work included:
+Three projects stand out:
 
-- The Windows Subsystem for Linux – this unlocked developer market share on Surface and Windows PCs in partnership with Canonical to have a native Ubuntu CLI experience.
-- Launching Windows containers internally and externally. Externally, I was responsible for our documentation in partnership with Docker to launch Windows containers. Internally, I helped M365, Azure Functions, Cosmos DB, and Azure Stream Analytics adopt a containerized compute platform to scale while reducing COGS.
-- Designing a socket-based guest-host communication channel to enable partners to build custom solutions. Ultimately this allowed numerous VSCode extensions and critical Azure fabric controls.
+- **Windows Subsystem for Linux:** working with Canonical to bring a native Ubuntu command-line experience to Windows.
+- **Windows containers:** owning launch documentation with Docker and helping Microsoft 365, Azure Functions, Cosmos DB, and Azure Stream Analytics adopt containers to scale and reduce operating costs.
+- **Guest-host communication:** designing a socket-based channel that partners could build on, later used by Visual Studio Code extensions and core Azure infrastructure.
 
-I care about community building. Externally, I blogged, spoke at conferences, and wrote technical documentation. Internally, I mentored and helped with Women in Base ERG.
+Community was part of the job I especially enjoyed: blogging, speaking, writing documentation, mentoring, and helping with the Women in Base employee resource group.
 
-### Program Manager – SQL, Microsoft
+### Helping people explore data
+
+**Program Manager — SQL**
+
 *September 2011 to December 2013*
 
-I helped define and develop a data-centric, interactive, HTML5/JS charting library to democratize data analytics. I owned documentation, represented the customer in design, facilitated cross-team collaboration, and roadmap planning.
+I started with an interactive HTML5/JavaScript charting library designed to make data analysis more accessible. I helped define the product, brought the customer perspective into design, owned documentation, and worked across teams on the roadmap.
 
----
+## Teaching and community
 
-## Volunteer Work and Teaching
+Teaching and mentoring have been a thread throughout my career, alongside helping with hiring and recruiting. I've also enjoyed sharing what I've learned at conferences, with speaker scores consistently at 4.7/5.
 
-- TEALS – Academy for Precision Learning, Teacher – December 2016 to July 2018
-- Society of Women Engineers - Saturday Academy, Computational Thinking Dinner, Various other SWE events
-- Computer Science Lab TA – OSU School of EECS – January 2009 to September 2011
-- Open Source Lab and Linux Users Group – Oregon State University – March 2006 to September 2011
+- **TEALS, Academy for Precision Learning** — teacher, December 2016 to July 2018.
+- **Society of Women Engineers** — Saturday Academy, Computational Thinking Dinner, and other events.
+- **Oregon State University, School of Electrical Engineering and Computer Science** — computer science lab teaching assistant, January 2009 to September 2011.
+- **Oregon State University, Open Source Lab and Linux Users Group** — March 2006 to September 2011.
 
----
-
-## Education
+## Where I started
 
 **Oregon State University – Class of 2011**
-B.S. Electrical and Computer Engineering, B.S. Computer Science
+B.S. Electrical and Computer Engineering, B.S. Computer Science.
+
+I got my start in tech at the OSU Open Source Lab — a sneaky student run 5-9s uptime datacenter that hosted lots of critical software like early FireFox, kernel.org, and many package mirrors.  It was a wonderful place to learn by doing. I worked on media software (Watch and Listen) for One Laptop per Child, and found a community around open source: the Linux Users Group, hackathons, and weekly coding socials.
+
+Outside of work, I'm usually remodeling my house, reading, hiking, traveling, teaching, or cycling through different crafts.
