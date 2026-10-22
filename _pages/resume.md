@@ -108,6 +108,18 @@ I worked on a small prototype team in SQL building tools to derive insights on u
 
 Teaching and mentoring have been a thread throughout my career, alongside helping with hiring and recruiting. I've also enjoyed sharing what I've learned at conferences, with speaker scores consistently at 4.7/5.
 
+### Talks, interviews, and podcasts
+
+| Recording | Year | Topic | Audience / context |
+| --- | --- | --- | --- |
+| [AKS hybrid at Microsoft Ignite](https://www.youtube.com/watch?v=tpzqWuX6-G8) | 2022 | Hybrid AKS, Azure Arc, and Kubernetes at the edge | Interview with Matt McSpirit at Microsoft Ignite |
+| [Windows Subsystem for Linux — MS Dev Show #192](https://www.youtube.com/watch?v=WwP9g0ckhEE) | 2018 | Windows Subsystem for Linux | Podcast with Tara Raj |
+| [Set up a Windows dev environment that feels like $HOME](https://learn.microsoft.com/en-us/shows/build-2018/brk3505) | 2018 | WSL, VS Code, and Hyper-V for Linux development on Windows | Microsoft Build; co-presented with Tara Raj.  ~300 person audience |
+| [We put Linux in your Windows](https://www.youtube.com/watch?v=JZCPYWrTLTg) | 2018 | WSL and Linux tooling for web developers | SFHTML5 meetup in San Francisco |
+| [PowerShell Direct interview](https://www.youtube.com/watch?v=xVzgPGwMb-s) | 2015 | Managing Hyper-V virtual machines with PowerShell Direct | Interview with Carsten Rachfahl at Microsoft Ignite |
+
+### Teaching and volunteering
+
 - **Hunt the Wumpus** - teacher, 2026
 - **TEALS, Academy for Precision Learning** — teacher, 2016 - 2018.
 - **Society of Women Engineers** — Saturday Academy, Computational Thinking Dinner, and other events.
