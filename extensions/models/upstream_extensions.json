@@ -1,0 +1,32 @@
+{
+  "@webframp/github": {
+    "version": "2026.10.14.1",
+    "pulledAt": "2026-10-22T21:58:36.358Z",
+    "files": [
+      ".swamp/pulled-extensions/@webframp/github/files/LICENSE.md",
+      ".swamp/pulled-extensions/@webframp/github/files/README.md",
+      ".swamp/pulled-extensions/@webframp/github/manifest.yaml",
+      ".swamp/pulled-extensions/@webframp/github/models/github/repos.ts",
+      ".swamp/pulled-extensions/@webframp/github/models/github/triage.ts"
+    ],
+    "checksum": "7adeffc00639df8fb2aa6b7f98925178a07b1969298444c0d1210b6ed9a28ffc",
+    "filesChecksum": "49dfa8faf470684bfbd8019b52dfeef11e45cbae7f746b42ceaa8aa2dbc01edf",
+    "serverUrl": "https://swamp-club.com",
+    "publishedChannel": "stable"
+  },
+  "@alvagante/content-blog-post": {
+    "version": "2026.08.02.1",
+    "pulledAt": "2026-10-22T21:58:40.969Z",
+    "files": [
+      ".swamp/pulled-extensions/@alvagante/content-blog-post/files/LICENSE.txt",
+      ".swamp/pulled-extensions/@alvagante/content-blog-post/files/README.md",
+      ".swamp/pulled-extensions/@alvagante/content-blog-post/manifest.yaml",
+      ".swamp/pulled-extensions/@alvagante/content-blog-post/models/extensions/models/content_blog_post.ts",
+      ".swamp/pulled-extensions/@alvagante/content-blog-post/models/extensions/models/content_shared.ts"
+    ],
+    "checksum": "d32a345e076e71e78687710f3c6423691b7706fa04a0234211e249ec99388e4d",
+    "filesChecksum": "e6cd0844eb31dd52a5d5cab5e3f67b019e5383d617b4bcf38c697837bfd3222d",
+    "serverUrl": "https://swamp-club.com",
+    "publishedChannel": "stable"
+  }
+}
