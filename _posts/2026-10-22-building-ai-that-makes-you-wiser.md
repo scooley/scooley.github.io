@@ -24,7 +24,7 @@ I really like [this blog post](https://medium.com/@yonatanzunger/are-we-building
 
 ## The failure analysis is genuinely good
 
-Part of why Clarity is so good at asking questions is that it's good at failure analysis. The best questions come from skepticism, which requires considering several perspectives: What does a malicious person do with this? Where does a well-intentioned user make a mistake? What does the security checklist say? One AI trying to think about all of those at once tends to produce a generic list that looks thorough but isn't.
+Part of why Clarity is so good at asking questions is that it's good at failure analysis. The best questions come from skepticism, which requires considering several perspectives: What does a malicious person do with this? Where does a well-intentioned user make a mistake? What does the security checklist say? My experience with coding agents has been that they produce a generic list of frilures that looks thorough but isn't.
 
 Clarity starts with broad analysis of the system as it will actually be used, then can apply specialist thinker guides where deeper analysis would help. The perspectives include:
 
