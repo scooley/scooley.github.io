@@ -45,7 +45,10 @@ the choice still works for the current page and a warning is logged.
 
 `_includes/footer/custom.html` provides the selector, styled by
 `assets/css/appearance.css`. It stays hidden without JavaScript; the site
-still follows the system appearance in that case.
+still follows the system appearance in that case. The compact native select
+uses system colors (`Field`, `FieldText`, and `GrayText`) so its text,
+background, and border follow the selected color scheme rather than the
+theme's hardcoded white select background. Keyboard focus has a visible outline.
 
 The light skin is selected by `minimal_mistakes_skin` in `_config.yml`.
 `_includes/head/custom.html` links to the generated `assets/css/dark.css`
