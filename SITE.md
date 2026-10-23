@@ -10,7 +10,23 @@ The resume uses Minimal Mistakes' `single` layout with `author_profile: true`
 and `author: scooley` to display this sidebar. Other pages can use the same
 front matter to share the personal profile.
 
-Other pages continue to use the site-wide author in `_config.yml`.
+Posts default to `author: scooley` and `author_profile: true` through
+`_config.yml`, displaying the author's profile in the left sidebar. To use a
+different profile, set `author: <profile-key>` in the post's front matter and
+define that profile in `_data/authors.yml`.
+
+Other pages without an explicit author continue to use the site-wide author
+in `_config.yml`.
+
+## Blog
+
+My blog lives in `/blog/`. It lists posts newest first, with linked titles,
+publication dates, reading times, and excerpts using the Minimal Mistakes theme.
+
+Add posts in `_posts/` using `YYYY-MM-DD-title.md` filenames and front matter
+with a title and date. Posts appear in the blog automatically; no manual links
+or page updates are needed. Post URLs follow the permalink setting in
+`_config.yml`.
 
 ## Career page
 

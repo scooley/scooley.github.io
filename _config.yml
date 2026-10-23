@@ -26,6 +26,7 @@ defaults:
       type: posts
     values:
       layout: single
+      author: scooley
       author_profile: true
       read_time: true
       show_date: true
