@@ -10,7 +10,7 @@ toc_sticky: true
 
 I've been working on [Clarity Agent](https://github.com/microsoft/clarity-agent) for just under a year, and I still haven't figured out how to feel about it. I helped start the hackathon project and take it from an internal experiment to an open-source release. I *want* something like Clarity Agent in my toolchain. At the same time, I don't think we have gotten it right yet.
 
-I love what it could be but have a mixed relationship with what it *is*, which feels more worth writing about than another "here's a cool AI tool" post.
+I love what it could be but have a mixed relationship with what it *is*.
 
 ## The thing I love most: it asks good questions
 
@@ -50,7 +50,7 @@ In practice, this catches the invisible drift that happens when you're deep in a
 
 Here's the deeper problem. Clarity Agent is, conceptually, built around the idea that creativity is iterative. You'll plan → build → replan → build in loops until the thing is actually right. Clarity Agent can help you iterate on the plan, but moving between planning and development doesn't work well.
 
-**In the MCP/embedded version**, Clarity can run alongside your coding agent via MCP. The idea is that your agent can check the protocol, keep it updated as the code evolves, and flag changes that drift from the original intent. In practice, it doesn't do this reliably. Coding agents don't reliably know when to update the protocol. When staging a change, they don't seem to consider whether it aligns with the product's intent before committing to a direction.
+**In the MCP/embedded version**, Clarity can run alongside your coding agent via MCP. The idea is that your agent can check the protocol, keep it updated as the code evolves, and flag changes that drift from the original intent. In practice, it doesn't do this reliably.  When staging a change, they don't seem to consider whether it aligns with the product's intent before committing to a direction.  It's also just hard to install and use since it isn't a hosted MCP server.
 
 **In the app/web version**, I've had Clarity Agent start writing code mid-session without the guardrails I'd expect from a dev environment. The next logical step in the sequence was implementation, and it just went there. That's a hard failure mode for a tool built around careful, structured thinking.
 
