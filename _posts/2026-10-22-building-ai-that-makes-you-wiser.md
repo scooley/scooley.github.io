@@ -26,7 +26,7 @@ I really like [this blog post](https://medium.com/@yonatanzunger/are-we-building
 
 Part of why Clarity is so good at asking questions is that it's good at failure analysis. The best questions come from skepticism, which requires considering several perspectives: What does a malicious person do with this? Where does a well-intentioned user make a mistake? What does the security checklist say? My experience with coding agents has been that they produce a generic list of frilures that looks thorough but isn't.
 
-Clarity starts with broad analysis of the system as it will actually be used, then can apply specialist thinker guides where deeper analysis would help. The perspectives include:
+Clarity starts with broad analysis of the system as it will be used, then applies relrvant specialist thinker guides where deeper analysis would help. The perspectives include:
 
 - A security thinker that works through auth, data protection, and injection risks against actual threat actors from your stakeholder list.
 - A human factors thinker that treats user error as a symptom of a deeper design problem rather than a root cause.
@@ -36,7 +36,7 @@ Findings are recorded in a shared failure-brainstorming mailbox. The failure-ana
 
 Because Clarity Agent knows what problem you're solving, its failure analysis is grounded in your problem space. Knowing the failure modes doesn't resolve them, but it helps prioritize which problems to solve and shape the product's direction. I find that other approaches to failure analysis focus on technical gaps rather than the strategic or structural issues that need to be considered when defining the product.
 
-For example, if I were building a forum with user accounts, a coding agent might flag storing passwords in plaintext and suggest secure password hashing or delegating sign-in to an identity provider. Clarity's guides also prompt it to consider the nature of the content (could it be explicit or contain personally identifiable information?) and interaction details (can people send DMs?). That can surface failure modes like malicious users filling the forum with spam and lead to a discussion of community management options.
+For example, if I were building a forum with user accounts, a coding agent might flag storing passwords in plaintext as a risk and suggest password hashing or delegating sign-in to an identity provider like OAuth. Clarity's guides also prompt it to consider the nature of the content (could it be explicit or contain personally identifiable information?) and interaction details (can people send DMs?). That can surface failure modes like malicious users filling the forum with spam and lead to a discussion with Clarity Agent about community management options.
 
 ## The documentation is useful product thinking
 
