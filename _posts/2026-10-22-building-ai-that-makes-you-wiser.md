@@ -4,6 +4,8 @@ title: "The parts of Clarity Agent I love (and the part that is broken)"
 date: 2026-10-22
 categories: [tech]
 tags: [ai, product, tooling]
+toc: true
+toc_sticky: true
 ---
 
 I've been working on [Clarity Agent](https://github.com/microsoft/clarity-agent) for just under a year, and I still haven't figured out how to feel about it. I helped start the hackathon project and take it from an internal experiment to an open-source release. I *want* something like Clarity Agent in my toolchain. At the same time, I don't think we have gotten it right yet.
@@ -24,17 +26,17 @@ I really like [this blog post](https://medium.com/@yonatanzunger/are-we-building
 
 Part of why Clarity is so good at asking questions is that it's good at failure analysis. The best questions come from skepticism, which requires considering several perspectives: What does a malicious person do with this? Where does a well-intentioned user make a mistake? What does the security checklist say? One AI trying to think about all of those at once tends to produce a generic list that looks thorough but isn't.
 
-Clarity's approach is to run independent specialists. A general thinker goes first ("analyze this as it will actually be used"). Then come the specialists:
+Clarity starts with broad analysis of the system as it will actually be used, then can apply specialist thinker guides where deeper analysis would help. The perspectives include:
 
 - A security thinker that works through auth, data protection, and injection risks against actual threat actors from your stakeholder list.
-- A human factors thinker whose explicit premise is that "user error is never a root cause, it's always a symptom of a design problem."
+- A human factors thinker that treats user error as a symptom of a deeper design problem rather than a root cause.
 - An adversarial analysis thinker that inventories your system's capabilities and asks who would want it to fail and what they'd specifically do.
 
-Each works independently and drops results into its own mailbox. Then Clarity synthesizes the failures by discarding ones that wouldn't cause real harm, deduplicating across thinkers, grouping by underlying mechanism, and surfacing the ones that need a human in the loop to resolve.
+Findings are recorded in a shared failure-brainstorming mailbox. The failure-analysis process then guides the agent through discarding failures that wouldn't cause real harm in context, triaging pre-existing issues, deduplicating findings, grouping by underlying mechanism, and surfacing the ambiguous cases for discussion with the user.
 
 Because Clarity Agent knows what problem you're solving, its failure analysis is grounded in your problem space. Knowing the failure modes doesn't resolve them, but it helps prioritize which problems to solve and shape the product's direction. I find that other approaches to failure analysis focus on technical gaps rather than the strategic or structural issues that need to be considered when defining the product.
 
-For example, if I were building a forum with user accounts, almost any coding harness would call out storing unencrypted user passwords as a risk and help integrate with OAuth.  Clarity agent would consider the nature of the content (is content likely to be explicit or contain PII?) or interaction details (can people send DMs?) and highlight risks related to that as well.  Clarity Agent would highlight things like malicious users filling the forum with SPAM as a failure mode and help talk through options for community management.
+For example, if I were building a forum with user accounts, a coding agent might flag storing passwords in plaintext and suggest secure password hashing or delegating sign-in to an identity provider. Clarity's guides also prompt it to consider the nature of the content (could it be explicit or contain personally identifiable information?) and interaction details (can people send DMs?). That can surface failure modes like malicious users filling the forum with spam and lead to a discussion of community management options.
 
 ## The documentation is useful product thinking
 
