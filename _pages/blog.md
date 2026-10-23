@@ -5,6 +5,10 @@ permalink: /blog/
 author_profile: true
 ---
 
-Welcome to my tech blog! Here I share insights, tutorials, and thoughts on software development, technology trends, and engineering best practices.
+Thoughts on software development, AI, and building useful tools.
 
-Blog posts coming soon...
+{% for post in site.posts %}
+  {% include archive-single.html type="list" %}
+{% else %}
+  No posts yet.
+{% endfor %}

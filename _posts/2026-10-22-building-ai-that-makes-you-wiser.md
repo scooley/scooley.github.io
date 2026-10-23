@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "The Part of Clarity Agent I Love (And the Part That's Still Broken)"
+title: "The parts of Clarity Agent I love (and the part that is broken)"
 date: 2026-10-22
 tags: [ai, product, tools]
 ---
