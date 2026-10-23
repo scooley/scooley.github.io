@@ -4,7 +4,7 @@ scooley:
   home: "https://scooley.io"
   bio: >-
     Curious human and tech enthusiast.
-  location: "Seattle, WA (up to 50% remote)"
+  location: "Seattle, WA"
   links:
     - label: "scooley.io"
       icon: "fas fa-fw fa-link"

@@ -2,7 +2,8 @@
 layout: single
 title: "The parts of Clarity Agent I love (and the part that is broken)"
 date: 2026-10-22
-tags: [ai, product, tools]
+categories: [tech]
+tags: [ai, product, tooling]
 ---
 
 I've been working on [Clarity Agent](https://github.com/microsoft/clarity-agent) for just under a year, and I still haven't figured out how to feel about it. I helped start the hackathon project and take it from an internal experiment to an open-source release. I *want* something like Clarity Agent in my toolchain. At the same time, I don't think we got it right.
