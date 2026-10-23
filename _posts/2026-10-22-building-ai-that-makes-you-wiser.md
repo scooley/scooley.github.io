@@ -18,15 +18,15 @@ Most AI tools are trained to be helpful, and "helpful" usually means agreeable. 
 
 Clarity's whole premise is the opposite. It's annoying in the right way.
 
-I've had it stop me mid-plan and ask who the stakeholder is for a feature, or whether the thing I called a requirement is actually an assumption. Questions I should have asked and that a perceptive coworker would ask in a meeting or spec review.  Working with Clarity's chat interface is also genuinely fun. It's more collaborative for ideation than writing planning docs alone or with a more neutral agent, while still producing planning content I'd happily share with other humans.
+I've had it stop me mid-plan and ask who the stakeholder is for a feature, or whether the thing I called a requirement is actually an assumption. Questions I should have asked and that a perceptive coworker would ask in a meeting or spec review.  Working with Clarity's chat interface is also genuinely fun. It's more collaborative for ideation than writing planning docs with a more neutral agent flow, while producing planning content I'd happily share with other humans.
 
 I really like [this blog post](https://medium.com/@yonatanzunger/are-we-building-the-right-ai-203cfc7effdc) by [Yonatan Zunger](https://medium.com/@yonatanzunger), the brain behind Clarity Agent. Clarity delivers on the idea of asking the right questions.
 
-## The failure analysis is genuinely good
+## The failure analysis is insightful
 
 Part of why Clarity is so good at asking questions is that it's good at failure analysis. The best questions come from skepticism, which requires considering several perspectives: What does a malicious person do with this? Where does a well-intentioned user make a mistake? What does the security checklist say? My experience with coding agents has been that they produce a generic list of failures that look thorough but aren't.
 
-Clarity starts with broad analysis of the system as it will be used, then applies relrvant specialist thinker guides where deeper analysis would help. The perspectives include:
+Clarity starts with broad analysis of the system as it will be used, then applies relrvant specialist thinkers where deeper analysis would help. The perspectives include:
 
 - A security thinker that works through auth, data protection, and injection risks against actual threat actors from your stakeholder list.
 - A human factors thinker that treats user error as a symptom of a deeper design problem rather than a root cause.
@@ -38,7 +38,7 @@ Because Clarity Agent knows what problem you're solving, its failure analysis is
 
 For example, if I were building a forum with user accounts, a coding agent might flag storing passwords in plaintext as a risk and suggest password hashing or delegating sign-in to an identity provider like OAuth. Clarity's guides also prompt it to consider the nature of the content (could it be explicit or contain personally identifiable information?) and interaction details (can people send DMs?). That can surface failure modes like malicious users filling the forum with spam and lead to a discussion with Clarity Agent about community management options.
 
-## The documentation is useful product thinking
+## The documentation is useful
 
 Everything Clarity produces lives in a `.clarity-protocol/` directory — human-readable markdown, in your repo, version-controlled alongside your code. Your future self can read it. Your teammates can read it. Agents can read it.
 
