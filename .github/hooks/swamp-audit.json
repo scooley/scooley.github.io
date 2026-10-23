@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "hooks": {
+    "postToolUse": [
+      {
+        "type": "command",
+        "command": "swamp audit record --from-hook --tool copilot"
+      }
+    ],
+    "postToolUseFailure": [
+      {
+        "type": "command",
+        "command": "swamp audit record --from-hook --tool copilot"
+      }
+    ]
+  }
+}
