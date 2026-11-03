@@ -1,5 +1,6 @@
 # Site Settings
 title: "SCooley IO"
+masthead_title: "scooley<span class='site-domain'>.io</span>"
 name: "SCooley IO"
 description: "Curious, with a few loose threads. Things Sarah Cooley is making, learning, and wondering about."
 url: "https://scooley.io"
