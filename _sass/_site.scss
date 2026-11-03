@@ -15,6 +15,10 @@ body {
   font-family: "Segoe UI", Aptos, Calibri, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
+figcaption {
+  font-family: inherit;
+}
+
 a {
   text-underline-offset: 0.2em;
 }
