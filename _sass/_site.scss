@@ -30,11 +30,21 @@ a {
 }
 
 .masthead__inner-wrap {
-  padding-block: 1.5em;
+  padding-block: 32px;
 }
 
 .greedy-nav {
-  font-size: 0.85em;
+  font-size: medium;
+}
+
+.greedy-nav .site-title {
+  font-size: 1.25em;
+  font-weight: 750;
+  letter-spacing: -0.055em;
+}
+
+.greedy-nav .visible-links {
+  font-size: 0.9em;
 }
 
 .page__footer {
@@ -47,7 +57,8 @@ a {
   grid-template-columns: minmax(0, 1fr) auto;
   align-items: center;
   gap: 1.5em;
-  padding-block: 2em;
+  padding-block: 24px 32px;
+  font-size: medium;
 }
 
 .page__footer .appearance-picker {
@@ -75,8 +86,19 @@ a {
 .field-guide {
   max-width: 1080px;
   margin-inline: auto;
-  font-size: 0.9rem;
+  // Match the demo's browser-default scale without resizing articles or the resume.
+  font-size: medium;
   line-height: 1.65;
+}
+
+.field-guide h1,
+.field-guide h2,
+.field-guide h3 {
+  font-family: inherit;
+}
+
+.field-guide p {
+  margin: 1em 0;
 }
 
 .field-guide h2,
@@ -90,13 +112,13 @@ a {
   grid-template-columns: 1fr 1.2fr;
   align-items: center;
   gap: 40px;
-  padding-block: 40px 64px;
+  padding-block: 64px;
 }
 
-.field-eyebrow {
+.field-guide .field-eyebrow {
   margin: 0 0 20px;
-  font-size: 0.7rem;
-  font-weight: 600;
+  font-size: 0.75em;
+  font-weight: 650;
   letter-spacing: 0.15em;
   text-transform: uppercase;
   color: var(--cp-text-muted);
@@ -104,10 +126,10 @@ a {
 
 .field-guide h1 {
   margin: 0 0 28px;
-  font-size: clamp(2.6rem, 5.2vw, 4rem);
+  font-size: clamp(3em, 5.7vw, 4.75em);
   font-weight: 650;
-  line-height: 1.08;
-  letter-spacing: -0.06em;
+  line-height: 1.06;
+  letter-spacing: -0.065em;
 }
 
 .field-guide h1 em {
@@ -119,9 +141,16 @@ a {
   text-underline-offset: 0.12em;
 }
 
-.field-intro {
+.field-guide .field-intro {
   max-width: 440px;
+  font-size: 1.1em;
   color: var(--cp-text-muted);
+}
+
+.field-hero > div > a {
+  display: inline-block;
+  margin-top: 16px;
+  font-size: 0.9em;
 }
 
 .field-art {
@@ -139,9 +168,10 @@ a {
 }
 
 .field-guide figcaption {
-  margin-top: 12px;
+  margin: 12px 0 0;
   color: var(--cp-text-muted);
-  font-size: 0.65rem;
+  font: inherit;
+  font-size: 0.75em;
 }
 
 .field-art figcaption {
@@ -152,7 +182,7 @@ a {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 28px;
-  padding-block: 32px 48px;
+  padding-block: 36px 48px;
   border-top: 1px solid var(--cp-border);
 }
 
@@ -163,14 +193,17 @@ a {
 }
 
 .field-direction small {
+  display: block;
+  margin-bottom: 12px;
   color: var(--cp-accent);
+  font-size: 0.75em;
 }
 
 .field-direction strong {
   display: block;
-  margin-block: 12px 8px;
+  margin: 0 0 8px;
   color: var(--cp-text);
-  font-size: 1.35rem;
+  font-size: 1.7em;
   font-weight: 550;
   letter-spacing: -0.04em;
   line-height: 1.2;
@@ -178,18 +211,20 @@ a {
 
 .field-direction p {
   margin: 0;
+  max-width: 250px;
   color: var(--cp-text-muted);
-  font-size: 0.8rem;
+  font-size: 0.9em;
 }
 
 .field-arrow {
   position: absolute;
-  top: 28px;
+  top: 34px;
   right: 0;
+  font-size: 1.6em;
 }
 
 .field-panorama {
-  margin: 0 0 48px;
+  margin: 8px 0 56px;
 }
 
 .field-panorama img {
@@ -208,21 +243,35 @@ a {
   flex-wrap: wrap;
 }
 
+.field-panorama figcaption {
+  font-size: 0.8em;
+}
+
 .field-section {
-  padding-block: 40px 48px;
+  padding-block: 48px 64px;
   border-top: 1px solid var(--cp-border);
 }
 
 .field-section h2 {
   margin: 0 0 24px;
-  font-size: 1.8rem;
+  font-size: clamp(1.6em, 3vw, 2.2em);
   font-weight: 600;
+  line-height: 1.2;
   letter-spacing: -0.04em;
 }
 
+.field-section-heading {
+  margin-bottom: 24px;
+}
+
+.field-section-heading h2 {
+  margin: 0;
+}
+
 .field-section-heading p {
+  margin: 0;
   color: var(--cp-text-muted);
-  font-size: 0.75rem;
+  font-size: 0.85em;
 }
 
 .field-filters {
@@ -240,7 +289,7 @@ a {
   background: var(--cp-bg);
   color: var(--cp-text);
   font: inherit;
-  font-size: 0.7rem;
+  font-size: 0.8em;
   cursor: pointer;
 }
 
@@ -282,10 +331,10 @@ a {
 
 .field-card h3 {
   margin: 0 0 16px;
-  font-size: 1.45rem;
+  font-size: 1.55em;
   font-weight: 600;
   letter-spacing: -0.035em;
-  line-height: 1.25;
+  line-height: 1.2;
 }
 
 .field-card h3 a {
@@ -297,35 +346,76 @@ a {
 }
 
 .field-card p:not(.field-eyebrow) {
+  margin: 0 0 16px;
   color: var(--cp-text-muted);
-  font-size: 0.8rem;
+  font-size: 0.95em;
 }
 
 .field-card .field-eyebrow {
   margin-bottom: 12px;
-  font-size: 0.6rem;
+  font-size: 0.65em;
+}
+
+.field-card[data-topics~="writing"] {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 340px;
+}
+
+.field-card[data-topics~="writing"] h3 {
+  font-size: 2em;
+}
+
+.field-card[data-topics~="writing"][hidden] {
+  display: none;
 }
 
 .field-topics {
   display: flex;
   gap: 12px;
   flex-wrap: wrap;
-  font-size: 0.7rem;
+  font-size: 0.8em;
 }
 
 .field-experiment {
   display: grid;
   grid-template-columns: 0.8fr 1.2fr;
   gap: 48px;
+  padding-block: 44px;
+}
+
+.field-experiment h3 {
+  margin: 0 0 12px;
+  font-size: 1.3em;
+  font-weight: 600;
+  line-height: 1.65;
+}
+
+.field-experiment p:not(.field-eyebrow) {
+  margin: 0 0 16px;
+  color: var(--cp-text-muted);
+}
+
+.field-contact {
+  padding-block: 56px 64px;
 }
 
 .field-contact h2 {
-  font-size: 2.8rem;
+  margin: 0 0 20px;
+  font-size: clamp(2.5em, 5vw, 4em);
+  font-weight: 550;
   line-height: 1.1;
+  letter-spacing: -0.055em;
 }
 
 .field-contact p {
   max-width: 580px;
+  color: var(--cp-text-muted);
+}
+
+.field-contact > p > a {
+  font-size: 1.1em;
 }
 
 .field-stars {
@@ -344,12 +434,26 @@ a {
   }
 
   .field-hero {
-    padding-block: 24px 40px;
-    gap: 24px;
+    padding-block: 48px 36px;
+    gap: 16px;
+  }
+
+  .field-panorama {
+    margin-bottom: 36px;
   }
 
   .field-directions {
-    gap: 24px;
+    padding-block: 8px 24px;
+    gap: 0;
+  }
+
+  .field-direction {
+    padding-block: 20px;
+    border-bottom: 1px solid var(--cp-border);
+  }
+
+  .field-direction p {
+    max-width: none;
   }
 
   .field-direction small {
@@ -357,11 +461,24 @@ a {
   }
 
   .field-arrow {
-    top: 8px;
+    top: 20px;
+  }
+
+  .field-section:not(.field-experiment):not(.field-contact) {
+    padding-block: 32px 40px;
+  }
+
+  .field-section-heading {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .field-card[data-topics~="writing"] {
+    min-height: auto;
   }
 
   .field-experiment {
-    gap: 8px;
+    gap: 24px;
   }
 
   .page__footer footer {

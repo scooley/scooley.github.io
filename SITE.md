@@ -96,6 +96,12 @@ the homepage, gallery, and footer styles. This applies the palette to articles,
 archives, projects, and the resume as well as the homepage, without changing
 the resume's content or layout.
 
+The homepage and gallery use the demo's browser-default (`medium`) font scale
+with component-relative `em` sizes. This prevents Minimal Mistakes' responsive
+root font enlargement from inflating those components. Heading and caption
+fonts inherit the shared site font; paragraph and section spacing follow the
+demo. Article and resume type sizing remains controlled by the theme.
+
 `_includes/head/custom.html` links to the generated `assets/css/dark.css`
 (built from `assets/css/dark.scss`). The script adjusts that link's media
 condition and the native browser color scheme to match the selected option.
