@@ -1,5 +1,23 @@
 # Site composition
 
+## Homepage and navigation
+
+`index.md` uses Minimal Mistakes' `splash` layout and `_includes/home.html`.
+The homepage links to Writing, Knitting, Experiments, the existing resume, and
+the contact invitation. Navigation is maintained in `_data/navigation.yml`.
+
+The selected-work grid combines the two latest posts with two curated craft
+projects. `assets/js/home.js` enables topic filtering and hides filters that
+have no matching entries. Without JavaScript, all entries remain visible.
+Post tags link to the existing `/tags/` archive.
+
+The square giraffe artwork and original-aspect-ratio mountain panorama are
+stored in `assets/images/`. The panorama comes from the author's Flickr
+account. On November 3, 2026, the site owner confirmed ownership of all images,
+including the supplied giraffe wallpaper, and that the Ravelry and Flickr
+photographs came from their personal camera. The image-permission blocker is
+resolved.
+
 ## Personal sidebar
 
 The `scooley` profile in `_data/authors.yml` contains the about-me sidebar text,
@@ -35,6 +53,25 @@ linked highlights followed by a conversational career history, rather than a
 document-style resume. Its "On this page" navigation comes from the theme's
 built-in table of contents.
 
+## Knitting and crochet
+
+`_pages/knitting.html` is a public gallery of selected projects, not a complete
+Ravelry notebook import. `_data/knitting.yml` holds the verified project names,
+crafts, completion dates, descriptions, pattern links, and local image paths.
+`_includes/knitting-card.html` renders the shared gallery/homepage cards;
+`_includes/craft-project.html` renders individual project pages.
+
+To add a project, add its metadata and photograph, then create a page under
+`_pages/` with a `/knitting/<slug>/` permalink, a matching `project` front matter
+value, and the `craft-project.html` include. Keep photographs accessible without
+a Ravelry login and link to patterns rather than copying pattern instructions.
+
+The local read-only Ravelry connector and its vault-backed model definition
+are development tools, not part of the published site. The initial selection
+uses notebook-list metadata: the full project-detail endpoint failed, so
+personal notes and yarn details have not been imported. No automatic sync is
+configured. Never put API credentials in site data, assets, or front matter.
+
 ## Appearance
 
 The footer's Appearance selector offers System, Light, and Dark. System is the
@@ -46,14 +83,28 @@ the choice still works for the current page and a warning is logged.
 `_includes/footer/custom.html` provides the selector, styled by
 `assets/css/appearance.css`. It stays hidden without JavaScript; the site
 still follows the system appearance in that case. The compact native select
-uses system colors (`Field`, `FieldText`, and `GrayText`) so its text,
-background, and border follow the selected color scheme rather than the
-theme's hardcoded white select background. Keyboard focus has a visible outline.
+uses the shared palette tokens, with native system colors as fallbacks.
+Keyboard focus has a visible outline. `_includes/footer.html` provides RSS,
+the current-year copyright, and platform credits on the left; the selector
+stays right aligned and moves below the credits on narrow screens.
 
-The light skin is selected by `minimal_mistakes_skin` in `_config.yml`.
+`assets/css/main.scss` defines the warm mushroom and muted cream light palette.
+`assets/css/dark.scss` defines the smoky navy and dusty peach dark palette.
+Both set Minimal Mistakes' Sass colors before importing the theme and then
+import `_sass/_site.scss`, which exposes shared `--cp-*` CSS tokens and adds
+the homepage, gallery, and footer styles. This applies the palette to articles,
+archives, projects, and the resume as well as the homepage, without changing
+the resume's content or layout.
+
 `_includes/head/custom.html` links to the generated `assets/css/dark.css`
 (built from `assets/css/dark.scss`). The script adjusts that link's media
 condition and the native browser color scheme to match the selected option.
-The dark stylesheet imports Minimal Mistakes' built-in dark skin and styles,
-so both appearances stay aligned with the remote theme. Keep the initial
-`prefers-color-scheme: dark` condition for the no-JavaScript fallback.
+Keep the initial `prefers-color-scheme: dark` condition for the no-JavaScript
+fallback.
+
+## Local build
+
+Run `bundle install`, then `bundle exec jekyll build` or
+`bundle exec jekyll serve`. The Gemfile uses GitHub Pages 232 and explicitly
+includes `csv` and `bigdecimal` for Ruby 3.4 compatibility.
+Development integrations and documentation are excluded in `_config.yml`.

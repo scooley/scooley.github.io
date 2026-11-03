@@ -1,0 +1,11 @@
+type: '@scooley/ravelry'
+typeVersion: 2026.11.02.1
+id: 04fa6e89-9dd3-4454-9981-5facbb180c08
+name: ravelry-projects
+version: 1
+tags: {}
+globalArguments:
+  member: yiandes
+  apiUsername: '${{ vault.get("default", "RAVELRY_API_USERNAME") }}'
+  apiPassword: '${{ vault.get("default", "RAVELRY_API_PASSWORD") }}'
+methods: {}

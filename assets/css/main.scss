@@ -1,0 +1,31 @@
+---
+---
+
+@charset "utf-8";
+
+$background-color: #e8dfd8;
+$text-color: #39343a;
+$muted-text-color: #63565a;
+$primary-color: #934e3d;
+$border-color: #cfc0b6;
+$code-background-color: #e6d3c8;
+$code-background-color-dark: #39343a;
+$form-background-color: #f3ece5;
+$footer-background-color: #e8dfd8;
+$link-color: #934e3d;
+$link-color-hover: #773c30;
+$link-color-visited: #934e3d;
+$masthead-link-color: #39343a;
+$masthead-link-color-hover: #934e3d;
+$navicon-link-color-hover: #e6d3c8;
+$surface-color: #f3ece5;
+$soft-color: #e6d3c8;
+$accent-decoration: #d69a83;
+$accent-foreground: #f3ece5;
+
+@import "minimal-mistakes";
+@import "site";
+
+:root {
+  color-scheme: light;
+}

@@ -1,0 +1,15 @@
+{% assign project = site.data.knitting | where: "slug", page.project | first %}
+<figure>
+  <img src="{{ project.image | relative_url }}" alt="{{ project.image_alt | escape }}" width="{{ project.image_width }}" height="{{ project.image_height }}">
+  <figcaption>{{ project.description | escape }}</figcaption>
+</figure>
+<dl>
+  <dt>Craft</dt>
+  <dd>{{ project.craft | escape }}</dd>
+  <dt>Completed</dt>
+  <dd><time datetime="{{ project.completed }}">{{ project.completed | date: "%B %-d, %Y" }}</time></dd>
+  <dt>Pattern</dt>
+  <dd><a href="{{ project.pattern_url }}">{{ project.title | escape }}</a> on Ravelry</dd>
+</dl>
+<p><a href="{{ project.ravelry_url }}">My original project notebook</a> has the Ravelry record. The photograph above is hosted here, so you can view this project without an account.</p>
+<p><a href="{{ '/knitting/' | relative_url }}">&larr; Back to knitting and crochet</a></p>

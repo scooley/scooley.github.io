@@ -3,8 +3,28 @@
 
 @charset "utf-8";
 
-@import "minimal-mistakes/skins/dark";
+$background-color: #202638;
+$text-color: #f2e7df;
+$muted-text-color: #c6b7b7;
+$primary-color: #edb59e;
+$border-color: #4a4b60;
+$code-background-color: #3b3544;
+$code-background-color-dark: #161a27;
+$form-background-color: #2a3043;
+$footer-background-color: #202638;
+$link-color: #edb59e;
+$link-color-hover: #f5cebb;
+$link-color-visited: #edb59e;
+$masthead-link-color: #f2e7df;
+$masthead-link-color-hover: #edb59e;
+$navicon-link-color-hover: #3b3544;
+$surface-color: #2a3043;
+$soft-color: #3b3544;
+$accent-decoration: #edb59e;
+$accent-foreground: #202638;
+
 @import "minimal-mistakes";
+@import "site";
 
 :root {
   color-scheme: dark;

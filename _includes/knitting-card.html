@@ -1,0 +1,12 @@
+{% assign project = include.project %}
+<article class="field-card" data-topics="yarn">
+  <a href="{{ project.url | relative_url }}" aria-label="{{ project.title | escape }}">
+    <img class="field-card-image" src="{{ project.image | relative_url }}" alt="{{ project.image_alt | escape }}" width="{{ project.image_width }}" height="{{ project.image_height }}" loading="lazy">
+  </a>
+  <div class="field-card-body">
+    <p class="field-eyebrow">{{ project.craft | escape }} / Project</p>
+    <h3><a href="{{ project.url | relative_url }}">{{ project.title | escape }}</a></h3>
+    <p>{{ project.description | escape }}</p>
+    <a href="{{ project.url | relative_url }}">See the project <span aria-hidden="true">&rarr;</span></a>
+  </div>
+</article>

@@ -1,0 +1,375 @@
+:root {
+  --cp-bg: #{$background-color};
+  --cp-bg-elevated: #{$surface-color};
+  --cp-text: #{$text-color};
+  --cp-text-muted: #{$muted-text-color};
+  --cp-border: #{$border-color};
+  --cp-accent: #{$primary-color};
+  --cp-accent-hover: #{$link-color-hover};
+  --cp-accent-soft: #{$soft-color};
+  --cp-accent-decoration: #{$accent-decoration};
+  --cp-accent-fg: #{$accent-foreground};
+}
+
+body {
+  font-family: "Segoe UI", Aptos, Calibri, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+a {
+  text-underline-offset: 0.2em;
+}
+
+:focus-visible {
+  outline: 2px solid var(--cp-accent);
+  outline-offset: 4px;
+}
+
+.masthead__inner-wrap,
+.page__footer footer {
+  max-width: 1160px;
+}
+
+.masthead__inner-wrap {
+  padding-block: 1.5em;
+}
+
+.greedy-nav {
+  font-size: 0.85em;
+}
+
+.page__footer {
+  border-top: 1px solid var(--cp-border);
+  color: var(--cp-text-muted);
+}
+
+.page__footer footer {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 1.5em;
+  padding-block: 2em;
+}
+
+.page__footer .appearance-picker {
+  grid-column: 2;
+  grid-row: 1;
+  justify-self: end;
+  margin: 0;
+  font-size: 0.75em;
+}
+
+.footer-info {
+  grid-column: 1;
+  grid-row: 1;
+  font-size: 0.75em;
+}
+
+.footer-info p {
+  margin: 0.5em 0 0;
+}
+
+.footer-info a {
+  text-transform: none;
+}
+
+.field-guide {
+  max-width: 1080px;
+  margin-inline: auto;
+  font-size: 0.9rem;
+  line-height: 1.65;
+}
+
+.field-guide h2,
+.field-guide h3 {
+  border: 0;
+  padding: 0;
+}
+
+.field-hero {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  align-items: center;
+  gap: 40px;
+  padding-block: 40px 64px;
+}
+
+.field-eyebrow {
+  margin: 0 0 20px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--cp-text-muted);
+}
+
+.field-guide h1 {
+  margin: 0 0 28px;
+  font-size: clamp(2.6rem, 5.2vw, 4rem);
+  font-weight: 650;
+  line-height: 1.08;
+  letter-spacing: -0.06em;
+}
+
+.field-guide h1 em {
+  font-weight: 450;
+  color: var(--cp-text-muted);
+  text-decoration: underline;
+  text-decoration-color: var(--cp-accent-decoration);
+  text-decoration-thickness: 0.045em;
+  text-underline-offset: 0.12em;
+}
+
+.field-intro {
+  max-width: 440px;
+  color: var(--cp-text-muted);
+}
+
+.field-art {
+  width: 88%;
+  min-width: 0;
+  margin: 0;
+  justify-self: center;
+}
+
+.field-art img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+}
+
+.field-guide figcaption {
+  margin-top: 12px;
+  color: var(--cp-text-muted);
+  font-size: 0.65rem;
+}
+
+.field-art figcaption {
+  text-align: right;
+}
+
+.field-directions {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+  padding-block: 32px 48px;
+  border-top: 1px solid var(--cp-border);
+}
+
+.field-direction {
+  position: relative;
+  padding-right: 28px;
+  text-decoration: none !important;
+}
+
+.field-direction small {
+  color: var(--cp-accent);
+}
+
+.field-direction strong {
+  display: block;
+  margin-block: 12px 8px;
+  color: var(--cp-text);
+  font-size: 1.35rem;
+  font-weight: 550;
+  letter-spacing: -0.04em;
+  line-height: 1.2;
+}
+
+.field-direction p {
+  margin: 0;
+  color: var(--cp-text-muted);
+  font-size: 0.8rem;
+}
+
+.field-arrow {
+  position: absolute;
+  top: 28px;
+  right: 0;
+}
+
+.field-panorama {
+  margin: 0 0 48px;
+}
+
+.field-panorama img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.field-panorama figcaption,
+.field-section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.field-section {
+  padding-block: 40px 48px;
+  border-top: 1px solid var(--cp-border);
+}
+
+.field-section h2 {
+  margin: 0 0 24px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: -0.04em;
+}
+
+.field-section-heading p {
+  color: var(--cp-text-muted);
+  font-size: 0.75rem;
+}
+
+.field-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 28px;
+}
+
+.field-filters button {
+  min-height: 44px;
+  padding: 8px 16px;
+  border: 1px solid var(--cp-border);
+  border-radius: 10px;
+  background: var(--cp-bg);
+  color: var(--cp-text);
+  font: inherit;
+  font-size: 0.7rem;
+  cursor: pointer;
+}
+
+.field-filters button[aria-pressed="true"] {
+  background: var(--cp-accent);
+  color: var(--cp-accent-fg);
+  border-color: var(--cp-accent);
+}
+
+.field-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+}
+
+.field-card {
+  overflow: hidden;
+  border: 1px solid var(--cp-border);
+  border-radius: 16px;
+  background: var(--cp-bg-elevated);
+}
+
+.field-card[hidden],
+.field-filters[hidden] {
+  display: none;
+}
+
+.field-card-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.field-card-body {
+  padding: 28px;
+}
+
+.field-card h3 {
+  margin: 0 0 16px;
+  font-size: 1.45rem;
+  font-weight: 600;
+  letter-spacing: -0.035em;
+  line-height: 1.25;
+}
+
+.field-card h3 a {
+  color: var(--cp-text);
+}
+
+.field-card h3 a:hover {
+  color: var(--cp-accent);
+}
+
+.field-card p:not(.field-eyebrow) {
+  color: var(--cp-text-muted);
+  font-size: 0.8rem;
+}
+
+.field-card .field-eyebrow {
+  margin-bottom: 12px;
+  font-size: 0.6rem;
+}
+
+.field-topics {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  font-size: 0.7rem;
+}
+
+.field-experiment {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 48px;
+}
+
+.field-contact h2 {
+  font-size: 2.8rem;
+  line-height: 1.1;
+}
+
+.field-contact p {
+  max-width: 580px;
+}
+
+.field-stars {
+  margin-bottom: 32px;
+  color: var(--cp-accent);
+  text-align: center;
+  letter-spacing: 0.5em;
+}
+
+@media (max-width: 760px) {
+  .field-hero,
+  .field-grid,
+  .field-directions,
+  .field-experiment {
+    grid-template-columns: 1fr;
+  }
+
+  .field-hero {
+    padding-block: 24px 40px;
+    gap: 24px;
+  }
+
+  .field-directions {
+    gap: 24px;
+  }
+
+  .field-direction small {
+    display: none;
+  }
+
+  .field-arrow {
+    top: 8px;
+  }
+
+  .field-experiment {
+    gap: 8px;
+  }
+
+  .page__footer footer {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .page__footer .appearance-picker {
+    grid-column: 1;
+    grid-row: 2;
+  }
+}

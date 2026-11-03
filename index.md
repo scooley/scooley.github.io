@@ -1,8 +1,7 @@
 ---
-layout: single
-author_profile: true
+layout: splash
+title: "Curious, with a few loose threads."
+excerpt: "Things I'm making, learning, and wondering about."
 ---
 
-Welcome! I'm Sarah — a technical PM at Microsoft working on AI safety. I write about whatever I find interesting: [tech and AI](/blog/tech/), recipes, crafts, and whatever else is on my mind.
-
-Head to the [blog](/blog/) to see everything.
+{% include home.html %}

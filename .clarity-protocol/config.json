@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "dependencies": {
+    "goal/problem.md": [],
+    "goal/stakeholders.md": ["goal/problem.md"],
+    "goal/requirements.md": ["goal/problem.md", "goal/stakeholders.md"],
+    "goal/open-questions.md": ["goal/problem.md"],
+    "solution/solution.md": ["goal/problem.md", "goal/requirements.md", "goal/open-questions.md"],
+    "failures/failures.md": ["solution/solution.md", "solution/architecture.md"],
+    "solution/architecture.md": ["solution/solution.md", "failures/failures.md"],
+    "solution/solution-summary.md": ["solution/solution.md", "solution/architecture.md"],
+    "summary.md": ["goal/problem.md", "goal/stakeholders.md", "solution/solution.md"]
+  },
+  "documentState": {
+    "goal/problem.md": {
+      "contentHash": "54b5a85146590a778d019689440038f256bdd9a1069a6ec8b6c1618771caed7c",
+      "dependencyHashes": {}
+    },
+    "goal/open-questions.md": {
+      "contentHash": "d3628d9b9ed856c2c17c252db8097e2f8c63b512f8938755cbfcf535eaa29aab",
+      "dependencyHashes": {
+        "goal/problem.md": "54b5a85146590a778d019689440038f256bdd9a1069a6ec8b6c1618771caed7c"
+      }
+    },
+    "solution/solution.md": {
+      "contentHash": "18e57deec010dec9d7a5735f8321235eaa4fb3e3fedb61783cbd5347b10cdc2d",
+      "dependencyHashes": {
+        "goal/problem.md": "54b5a85146590a778d019689440038f256bdd9a1069a6ec8b6c1618771caed7c",
+        "goal/open-questions.md": "d3628d9b9ed856c2c17c252db8097e2f8c63b512f8938755cbfcf535eaa29aab"
+      }
+    },
+    "summary.md": {
+      "contentHash": "ebc8125187b9438b3622de364cd23796cf4a236f56309eda03185613fcef36d8",
+      "dependencyHashes": {
+        "goal/problem.md": "54b5a85146590a778d019689440038f256bdd9a1069a6ec8b6c1618771caed7c",
+        "solution/solution.md": "18e57deec010dec9d7a5735f8321235eaa4fb3e3fedb61783cbd5347b10cdc2d"
+      }
+    }
+  },
+  "decisionState": {},
+  "thinkingState": {
+    "process": null,
+    "focus": null,
+    "resumeFrom": null
+  },
+  "thinkers": {
+    "disabled": []
+  }
+}

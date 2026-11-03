@@ -1,7 +1,11 @@
 main:
-  - title: "Tech Blog"
+  - title: "Writing"
     url: /blog/
-  - title: "Projects"
+  - title: "Knitting"
+    url: /knitting/
+  - title: "Experiments"
     url: /projects/
-  - title: "Resume"
+  - title: "My resume"
     url: /resume/
+  - title: "Say hello"
+    url: /#contact

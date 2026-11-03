@@ -19,9 +19,9 @@
   margin: 0;
   padding: 0.25rem 0.5rem;
   font: inherit;
-  color: FieldText;
-  background-color: Field;
-  border: 1px solid GrayText;
+  color: var(--cp-text, FieldText);
+  background-color: var(--cp-bg-elevated, Field);
+  border: 1px solid var(--cp-accent, GrayText);
   border-radius: 0.25rem;
   box-shadow: none;
   cursor: pointer;

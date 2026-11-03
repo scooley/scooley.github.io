@@ -1,0 +1,20 @@
+---
+layout: splash
+title: "Knitting (and a little crochet)"
+permalink: /knitting/
+---
+
+<div class="field-guide">
+  <header class="field-section">
+    <p class="field-eyebrow">With yarn</p>
+    <h1>Knitting (and a little crochet)</h1>
+    <p class="field-intro">I knit quite a lot. Here are a few things I've made, from textured sweaters to small creatures.</p>
+    <p>These are selected projects from <a href="https://www.ravelry.com/projects/yiandes">my Ravelry notebook</a>, not the whole collection. You don't need a Ravelry account to see the photos here.</p>
+  </header>
+  <div class="field-grid">
+    {% for project in site.data.knitting %}
+      {% include knitting-card.html project=project %}
+    {% endfor %}
+  </div>
+  <p>Pattern and notebook links lead to Ravelry, where some pages may require an account.</p>
+</div>

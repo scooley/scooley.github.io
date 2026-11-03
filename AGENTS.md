@@ -19,34 +19,23 @@ This repository is managed with [swamp](https://github.com/swamp-club/swamp).
 
 ## Skills
 
-**IMPORTANT:** Always load swamp skills, even when in plan mode. The skills provide
-essential context for working with this repository.
+**IMPORTANT:** Always load swamp skills, even when in plan mode. The skills provide essential context for working with this repository.
 
 - `swamp` - Swamp CLI — behaviors, workflows, data, vaults, extensions, publishing, repos, reports, issues, and troubleshooting
 - `swamp-getting-started` - Interactive onboarding for new swamp users
 
 ## Getting Started
 
-If you were asked to read a task brief under `tasks/` (a file whose first
-line is `<!-- swamp start brief v1 -->`), read that brief, then invoke the
-`swamp-getting-started` skill and follow it from its brief entry point.
+If you were asked to read a task brief under `tasks/` (a file whose first line is `<!-- swamp start brief v1 -->`), read that brief, then invoke the `swamp-getting-started` skill and follow it from its brief entry point.
 
-If the user is new to swamp or asks to get started, or a swamp command you
-run shows this repository has no behaviors yet, invoke the
-`swamp-getting-started` skill. It checks for existing behaviors itself and walks
-new users through an interactive onboarding tutorial.
+If the user is new to swamp or asks to get started, or a swamp command you run shows this repository has no behaviors yet, invoke the `swamp-getting-started` skill. It checks for existing behaviors itself and walks new users through an interactive onboarding tutorial.
 
 Otherwise, use the `swamp` skill to work with swamp behaviors.
 
 ## Commands
 
-Use `swamp --help` to see available commands. For a machine-readable JSON
-schema of the CLI (commands, options, arguments) intended for agent
-consumption, run `swamp help [<command>...]` — e.g. `swamp help` returns
-the full tree, and `swamp help behavior run` scopes to a subtree.
+Use `swamp --help` to see available commands. For a machine-readable JSON schema of the CLI (commands, options, arguments) intended for agent consumption, run `swamp help [<command>...]` — e.g. `swamp help` returns the full tree, and `swamp help behavior run` scopes to a subtree.
 
-Behaviors (formerly models) are managed with `swamp behavior` — e.g.
-`swamp behavior run <name> <method>` (or
-`swamp behavior run @<type> <method> <name>` to run against a type
-directly). Every `swamp model …` spelling remains supported.
+Behaviors (formerly models) are managed with `swamp behavior` — e.g. `swamp behavior run <name> <method>` (or
+`swamp behavior run @<type> <method> <name>` to run against a type directly). Every `swamp model …` spelling remains supported.
 <!-- END swamp managed section -->

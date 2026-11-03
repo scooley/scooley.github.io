@@ -1,7 +1,7 @@
 # Site Settings
 title: "SCooley IO"
 name: "SCooley IO"
-description: "Starting a place to share what I find interesting right now."
+description: "Curious, with a few loose threads. Things Sarah Cooley is making, learning, and wondering about."
 url: "https://scooley.io"
 baseurl: ""
 
@@ -17,6 +17,22 @@ author:
 # Reading Files
 include:
   - _pages
+exclude:
+  - AGENTS.md
+  - CLAUDE.md
+  - README.md
+  - assets/README.md
+  - assets/js/README.md
+  - SITE.md
+  - Gemfile
+  - Gemfile.lock
+  - extensions
+  - models
+  - workflows
+  - vaults
+  - grants
+  - skills-lock.json
+  - 2026-11-02_DRIFT_REPORT.md
 
 # Defaults
 defaults:

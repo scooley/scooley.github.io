@@ -1,0 +1,25 @@
+- slug: salty-days-sweater
+  title: "Salty Days Sweater"
+  craft: "Knitting"
+  description: "A rust-colored sweater with textured panels and a ribbed hem."
+  image: /assets/images/salty-days-sweater.jpg
+  image_alt: "Sarah wearing a rust-colored textured sweater in a sunlit room."
+  image_width: 640
+  image_height: 480
+  completed: "2026-10-21"
+  pattern_url: https://www.ravelry.com/patterns/library/salty-days-sweater
+  ravelry_url: https://www.ravelry.com/projects/yiandes/salty-days-sweater-2
+  url: /knitting/salty-days-sweater/
+
+- slug: shadow-cat
+  title: "Shadow the Miniature Black Cat"
+  craft: "Crochet"
+  description: "A little black cat with bright ears, a pink nose, and a green bow."
+  image: /assets/images/shadow-cat.jpg
+  image_alt: "A small crocheted black cat with pink ears and nose and a green bow, held in one hand."
+  image_width: 480
+  image_height: 640
+  completed: "2025-12-24"
+  pattern_url: https://www.ravelry.com/patterns/library/shadow-the-miniature-black-cat
+  ravelry_url: https://www.ravelry.com/projects/yiandes/shadow-the-miniature-black-cat
+  url: /knitting/shadow-the-miniature-black-cat/
