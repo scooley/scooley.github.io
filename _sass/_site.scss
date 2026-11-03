@@ -3,6 +3,7 @@
   --cp-bg-elevated: #{$surface-color};
   --cp-text: #{$text-color};
   --cp-text-muted: #{$muted-text-color};
+  --cp-text-soft: #{$soft-text-color};
   --cp-border: #{$border-color};
   --cp-accent: #{$primary-color};
   --cp-accent-hover: #{$link-color-hover};
@@ -142,7 +143,7 @@ a {
 
 .field-guide h1 em {
   font-weight: 450;
-  color: var(--cp-text-muted);
+  color: var(--cp-text-soft);
   text-decoration: underline;
   text-decoration-color: var(--cp-accent-decoration);
   text-decoration-thickness: 0.045em;
