@@ -80,6 +80,8 @@ Our team health and leadership-confidence scores were above the Microsoft and or
 
 Buying hundreds of headsets is only useful if you can deploy, maintain, and secure them. I made sure enterprise IT could recieve a palate full of HoloLens 2 then deploy and manage them securely in their infrastructure.  I built the roadmap and shiped major releases twice a year for customers and partners.  Some key items included MDM support for Hololens, Autopilot pre-provisioning, and unattend install from USB.
 
+My deployment and management work helped customers such as [Toyota](https://unity.com/blog/industry/toyota-makes-mixed-reality-magic-with-unity-and-microsoft-hololens-2) bring HoloLens 2 into manufacturing and field service, including design reviews, inspections, and remote assistance.
+
 I also worked on secure device deployment for the [Integrated Visual Augmentation System (IVAS) program](https://news.microsoft.com/source/features/digital-transformation/u-s-army-to-use-hololens-technology-in-high-tech-headsets-for-soldiers/), whose production contract was valued at up to $22 billion. That meant working through strict security requirements and assessments for devices used at the tactical edge.
 
 ### Windows, Linux, and containers
