@@ -15,6 +15,8 @@ I helped start [Clarity Agent](https://github.com/microsoft/clarity-agent) as a 
 
 The part I'm still working through is the loop between planning and building: how do we keep the decisions connected to what actually gets made?
 
+I'm exploring that loop with [Clarity for Swamp](https://github.com/scooley/swamp-clarity), an experiment in integrating Clarity into an agent harness so it can help catch drift between intent and implementation, and flag plans or decisions that have gone stale.
+
 {% assign clarity_post = site.posts | where: "slug", "building-ai-that-makes-you-wiser" | first %}
 {% if clarity_post %}
 [Read what I love about Clarity, and what still needs work]({{ clarity_post.url | relative_url }}).
